@@ -1,4 +1,4 @@
-package com.mtech.mysecondproject.main.adapter
+package com.mtech.mysecondproject.ui.main.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mtech.mysecondproject.databinding.ItemPostBinding
-import com.mtech.mysecondproject.main.data.PostData
+import com.mtech.mysecondproject.ui.main.data.PostData
 
 class MyAdapter(
     private val context: Context,

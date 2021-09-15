@@ -1,4 +1,4 @@
-package com.mtech.mysecondproject.main.data
+package com.mtech.mysecondproject.ui.main.data
 
 
 import com.google.gson.annotations.SerializedName

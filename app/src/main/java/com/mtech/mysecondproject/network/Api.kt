@@ -9,7 +9,8 @@ import java.util.concurrent.TimeUnit
 class Api {
 
     companion object{
-        private const val API_BASE_URL = "https://jsonplaceholder.typicode.com"
+        //private const val API_BASE_URL = "https://jsonplaceholder.typicode.com"
+        private const val API_BASE_URL = "https://money2gotest.nahidatech.com"
 
         private val instance by lazy { Api().createService() }
         fun getService() = instance
