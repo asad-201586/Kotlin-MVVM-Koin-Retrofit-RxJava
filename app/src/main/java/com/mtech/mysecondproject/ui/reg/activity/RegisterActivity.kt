@@ -26,30 +26,24 @@ class RegisterActivity : AppCompatActivity() {
     private fun setObserver() {
         regViewModel.regObserver.observe(this, {
             if (it.user.status == "1") {
-                edt_name.setText("")
-                edt_mobile.setText("")
-                edt_email.setText("")
-                edt_password.setText("")
-                edt_password_confirm.setText("")
-                Toast.makeText(
-                    this,
-                    getString(R.string.successfully_registered),
-                    Toast.LENGTH_SHORT
-                ).show()
-
-                Log.e("my_token", "setObserver: token: ${it.token}", )
-
-            } else Toast.makeText(
-                this,
-                getString(R.string.something_went_wrong),
-                Toast.LENGTH_SHORT
-            ).show()
+                clearEdt()
+                Toast.makeText(this, getString(R.string.successfully_registered), Toast.LENGTH_SHORT).show()
+                Log.e("my_token", "setObserver: token: ${it.token}")
+            } else Toast.makeText(this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show()
         })
 
         regViewModel.loaderObserver.observe(this, {
             if (it) loader.visibility = View.VISIBLE
             else loader.visibility = View.GONE
         })
+    }
+
+    private fun clearEdt() {
+        edt_name.setText("")
+        edt_mobile.setText("")
+        edt_email.setText("")
+        edt_password.setText("")
+        edt_password_confirm.setText("")
     }
 
     private fun clickListener() {
