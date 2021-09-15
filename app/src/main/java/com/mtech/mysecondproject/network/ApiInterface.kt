@@ -1,7 +1,7 @@
 package com.mtech.mysecondproject.network
 
 import com.mtech.mysecondproject.ui.main.data.PostData
-import com.mtech.mysecondproject.ui.main.data.reg.RegData
+import com.mtech.mysecondproject.ui.reg.data.RegData
 import io.reactivex.Single
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded

@@ -1,8 +1,8 @@
 package com.mtech.mysecondproject.ui.reg.viewModel
 
 import androidx.lifecycle.MutableLiveData
-import com.mtech.mysecondproject.ui.main.BaseViewModel
-import com.mtech.mysecondproject.ui.main.data.reg.RegData
+import com.mtech.mysecondproject.BaseViewModel
+import com.mtech.mysecondproject.ui.reg.data.RegData
 
 class RegisterViewModel: BaseViewModel() {
     private val regLiveData = MutableLiveData<RegData>()

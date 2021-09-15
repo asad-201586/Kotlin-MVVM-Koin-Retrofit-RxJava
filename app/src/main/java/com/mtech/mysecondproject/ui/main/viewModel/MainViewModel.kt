@@ -1,7 +1,7 @@
 package com.mtech.mysecondproject.ui.main.viewModel
 
 import androidx.lifecycle.MutableLiveData
-import com.mtech.mysecondproject.ui.main.BaseViewModel
+import com.mtech.mysecondproject.BaseViewModel
 import com.mtech.mysecondproject.ui.main.data.PostData
 
 class MainViewModel: BaseViewModel() {

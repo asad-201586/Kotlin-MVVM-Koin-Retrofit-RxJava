@@ -1,6 +1,6 @@
 package com.mtech.mysecondproject.di
 
-import com.mtech.mysecondproject.ui.main.BaseViewModel
+import com.mtech.mysecondproject.BaseViewModel
 import com.mtech.mysecondproject.ui.main.repo.MainRepo
 import com.mtech.mysecondproject.ui.main.viewModel.MainViewModel
 import com.mtech.mysecondproject.ui.reg.repo.RegRepo

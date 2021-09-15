@@ -2,7 +2,7 @@ package com.mtech.mysecondproject.ui.reg.repo
 
 import com.mtech.mysecondproject.network.apiHitter
 import com.mtech.mysecondproject.rxKotlin.Transformers
-import com.mtech.mysecondproject.ui.main.data.reg.RegData
+import com.mtech.mysecondproject.ui.reg.data.RegData
 import io.reactivex.Single
 
 class RegRepo {

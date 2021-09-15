@@ -1,11 +1,10 @@
-package com.mtech.mysecondproject.ui.main
+package com.mtech.mysecondproject
 
 import android.util.Log
-import com.mtech.mysecondproject.KotlinBaseViewModel
 import com.mtech.mysecondproject.ui.main.data.PostData
 import com.mtech.mysecondproject.ui.main.repo.MainRepo
 import com.mtech.mysecondproject.rxKotlin.Transformers.useProgress
-import com.mtech.mysecondproject.ui.main.data.reg.RegData
+import com.mtech.mysecondproject.ui.reg.data.RegData
 import com.mtech.mysecondproject.ui.reg.repo.RegRepo
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
