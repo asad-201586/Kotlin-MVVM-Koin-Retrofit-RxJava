@@ -12,16 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MySecondProject">
-        <activity android:name=".ui.reg.activity.RegisterActivity">
+        <activity android:name=".ui.photoDetails.PhotoDetailsActivity"></activity>
+        <activity android:name=".ui.photos.activity.PhotosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.main.activity.MainActivity">
-
-        </activity>
+        <activity android:name=".ui.reg.activity.RegisterActivity"></activity>
+        <activity android:name=".ui.main.activity.MainActivity" />
     </application>
 
 </manifest>

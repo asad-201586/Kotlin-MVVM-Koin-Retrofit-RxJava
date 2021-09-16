@@ -7,6 +7,6 @@ import io.reactivex.Single
 
 class MainRepo {
     fun getPostData(): Single<PostData>{
-        return apiHitter().getPostData().compose(Transformers.apply())
+        return apiHitter().getAllPosts().compose(Transformers.apply())
     }
 }

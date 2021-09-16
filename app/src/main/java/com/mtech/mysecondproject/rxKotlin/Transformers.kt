@@ -4,6 +4,8 @@ import com.mtech.mysecondproject.KotlinBaseViewModel
 import io.reactivex.Single
 import io.reactivex.SingleTransformer
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
 object Transformers {
@@ -22,6 +24,10 @@ object Transformers {
             }.doFinally { viewModel.hideProgress() }.doOnSuccess { viewModel.hideProgress() }
                 .doOnError { viewModel.hideProgress() }.doOnTerminate { viewModel.hideProgress() }
         }
+    }
+
+    fun Disposable.addToDisposable(disposable: CompositeDisposable?) {
+        disposable?.add(this)
     }
 
 }

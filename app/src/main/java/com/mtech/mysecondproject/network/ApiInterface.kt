@@ -1,18 +1,17 @@
 package com.mtech.mysecondproject.network
 
 import com.mtech.mysecondproject.ui.main.data.PostData
+import com.mtech.mysecondproject.ui.photos.data.PhotosData
 import com.mtech.mysecondproject.ui.reg.data.RegData
 import io.reactivex.Single
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.Call
+import retrofit2.http.*
 
 
 interface ApiInterface {
 
     @GET("posts")
-    fun getPostData(): Single<PostData>
+    fun getAllPosts(): Single<PostData>
 
     @FormUrlEncoded
     @POST("/api/register")
@@ -24,5 +23,10 @@ interface ApiInterface {
         @Field("password_confirmation") password_confirmation: String?,
         @Field("registration_mode") registration_mode: String?
     ): Single<RegData>
+
+    @GET
+    fun getPhotos(
+            @Url url:String
+    ): Single<PhotosData>
 
 }

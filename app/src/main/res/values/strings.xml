@@ -9,4 +9,11 @@
     <string name="pass_not_matched">Password not matched</string>
     <string name="successfully_registered">Successfully registered</string>
     <string name="something_went_wrong">Something went wrong, please try again</string>
+    <string name="no_photos_found">No Photos found</string>
+    <string name="previous_album">Previous Album</string>
+    <string name="next_album">Next Album</string>
+    <string name="todo">todo</string>
+    <string name="albumid">Album ID</string>
+    <string name="id">ID</string>
+    <string name="title">Title</string>
 </resources>

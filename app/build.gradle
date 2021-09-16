@@ -73,4 +73,10 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+
+    //rv animation
+    implementation "com.mlsdev.animatedrv:library:2.0.0"
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

@@ -2,13 +2,14 @@ package com.mtech.mysecondproject.ui.reg.data
 
 
 import com.google.gson.annotations.SerializedName
+import com.mtech.mysecondproject.model.CommonResponse
 
 data class RegData(
     @SerializedName("token")
     val token: String,
     @SerializedName("user")
     val user: User
-) {
+): CommonResponse() {
     data class User(
         @SerializedName("avatar")
         val avatar: String? = "",
